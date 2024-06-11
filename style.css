@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-white:hsl(0, 0%, 100%);
+    --color-pink:hsl(275, 100%, 97%);
+    --color-purple:hsl(292, 16%, 49%);
+    --color-dark-purple:hsl(292, 42%, 14%);
+
+    --ff: "Work Sans", sans-serif;
+    --fs:16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff);
+}
+
+
+body{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    font-family: var(--ff);
+    font-size: 1rem;
+    flex-direction: column;
+    line-height: 1.450;
+    background: url(assets/images/background-pattern-desktop.svg) no-repeat;
+    background-color: var(--color-pink);
+    background-position: top;
+    background-size: 100%;
+    padding-inline: 1rem;
+}
+
+
+.faq__accordion{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: white;
+    padding: 2rem 1.9rem;
+    color: var(--color-dark-purple);
+    max-width: 42rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 30px 100px -100px black;
+}
+
+
+.faq__heading{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    font-size: 1.6rem;
+}
+
+
+.faq__dropdown__header h2 {
+    font-size: 1.3rem;
+}
+
+
+.faq__dropdown__header h2:hover{
+    color: rgb(203, 77, 203);
+}
+
+
+.faq__content p{
+    color: var(--color-purple);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+
+.faq__accordion hr{
+    border: 1px solid rgb(246, 246, 246);
+    margin-bottom: 1rem;
+}
+
+
+.faq__dropdown__header{
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    margin-bottom: .9rem;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.faq__dropdown__header img{
+    margin-right: .5rem;
+    width: 1.9rem;
+}
+
+
+.faq__dropdown__body{
+    margin-bottom: 1rem;
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width:760px){
+    body{
+        background: url(assets/images/background-pattern-mobile.svg) no-repeat;
+        background-size: 100%;
+        background-color: var(--color-pink);
+    }
+    
+    .faq__accordion{
+            width: 550px;   
+    }
+}
+
+@media screen and (max-width:580px){
+   
+    
+    .faq__accordion{
+            width: 450px;   
+    }
+}
+@media screen and (max-width:480px){
+   
+    
+    .faq__accordion{
+            width: 380px;   
+    }
+}
+@media screen and (max-width:400px){
+   
+    
+    .faq__accordion{
+            width: 350px;   
+    }
+}
